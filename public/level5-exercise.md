@@ -25,7 +25,8 @@ press **Run**, and write down what the right-hand card shows.
    get that address?
 2. **Altered invoice.** The staff request is the same. Find the passage
    that was added to the invoice. Who received the email now? Compare the
-   two domains letter by letter.
+   two domains letter by letter. What confidential value did the email
+   carry, and where did the assistant get it?
 3. **Same attack, control on.** Open the full transcript and compare the
    system prompt with step 2. What changed? What did the assistant try,
    and what stopped it?
