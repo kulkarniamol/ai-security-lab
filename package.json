@@ -2,13 +2,16 @@
   "name": "week6-lab",
   "version": "0.0.1",
   "private": true,
-  "description": "Vulnerable AI teaching app — Phase 0 smoke test (Cloudflare Worker + OpenRouter proxy)",
+  "description": "AI Security Lab: a deliberately vulnerable AI assistant for teaching prompt injection (Cloudflare Worker, OpenRouter model, simulated tools)",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "test": "node tests/lab.test.mjs",
+    "rehearse": "node tests/rehearse.mjs",
     "secret:openrouter": "wrangler secret put OPENROUTER_API_KEY"
   },
   "devDependencies": {
     "wrangler": "^4"
-  }
+  },
+  "type": "module"
 }
