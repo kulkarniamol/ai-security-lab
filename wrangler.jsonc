@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "week6-lab",
+  "main": "src/index.js",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "vars": {
+    // Non-secret config. The OpenRouter key itself is set separately as a
+    // secret (never goes in this file, never gets committed):
+    //   npx wrangler secret put OPENROUTER_API_KEY
+    "MODEL": "meta-llama/llama-3.1-8b-instruct",
+    // OpenRouter provider-routing preference: prioritize Groq for speed.
+    // See https://openrouter.ai/docs/guides/routing/provider-selection
+    "PROVIDER_ORDER": "Groq"
+  }
+}
